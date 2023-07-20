@@ -7,7 +7,7 @@ const errorHandler = require('./middleware/error_handler');
 // DB connection imported
 const connectDB = require('./config/db_connection');
 
-// Configure the envirement
+// Configure the environment
 const dotenv = require('dotenv').config();
 
 // Make call for the database connection
@@ -25,7 +25,7 @@ app.use(express.json());
 // Configures the contacts regarding API
 app.use('/api/contacts', require('./routes/contact_routes'));
 
-// Configures the user authentication reagrding API
+// Configures the user authentication regarding API
 app.use('/api/user', require('./routes/user_routes'));
 
 // Configures the error handlers

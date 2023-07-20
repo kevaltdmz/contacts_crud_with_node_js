@@ -19,7 +19,7 @@ const userLoginRequested = asyncHandler(async (req, res) => {
     const { email, password } = req.body;
     if (!email || !password) {
         res.status(400);
-        throw new Error('Email and password is requried');
+        throw new Error('Email and password is required');
     }
     const user = await User.findOne({ email });
     console.log('User Found :)', user);
@@ -60,7 +60,7 @@ const userLoginRequested = asyncHandler(async (req, res) => {
 const registerUserRequested = asyncHandler(async (req, res) => {
     console.log('In register user API');
     const { userName, email, password } = req.body;
-    console.log('Value receided from the body is ---- ', userName, email, password);
+    console.log('Value received from the body is ---- ', userName, email, password);
     if (!userName || !email || !password) {
         res.status(400);
         throw new Error('All fields are required');

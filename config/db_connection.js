@@ -4,10 +4,10 @@ const mongoose = require('mongoose');
 // Connect the local server with the backend server
 const connectDB = async () => {
     try {
-        // Connect with the mongoDB server
+        // Connect with the mongodb server
         const connect = await mongoose.connect(process.env.CONNECTION_STRING);
         console.log(
-            'Database connnected : ',
+            'Database connected : ',
             connect.connection.host,
             connect.connection.name,
         );

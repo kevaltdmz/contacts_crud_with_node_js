@@ -20,7 +20,7 @@ router.post('/login', userLoginRequested);
 // This api is used for register user
 router.post('/register', registerUserRequested);
 
-// This api is used for get registerd user
+// This api is used for get registered user
 router.get('/getUser', validateToken, getRegisteredUserRequested);
 
 // Export router
